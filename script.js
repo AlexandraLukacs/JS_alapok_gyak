@@ -35,32 +35,32 @@ function elemekElerese4() {
 }
 
 function elemekFormazasa1() {
-  const ELEM = $(".lista")[0];
-  ELEM.classList.add("formazott");
+  const ELEM = $(".lista");
+  ELEM.addClass("formazott");
 }
 
 function esemenykezeles1() {
-  const buttonELEM = $(".lista")[0];
+  const buttonELEM = $(".lista");
   console.log(buttonELEM.html());
-  buttonELEM.addEventListener("click", kattintas);
+  $(".lista").on("click", kattintas);
 }
 function kattintas() {
-    const buttonELEM = $(".lista")[0];
-    $("kattintasutan")[0].html() = buttonELEM.html();
+    const buttonELEM = $(".lista");
+    $("kattintasutan").eq(0).html() = buttonELEM.html();
 }
 
 
 function esemenykezeles2() {
-    ELEM = $("feladat")[0];
+    ELEM = $("feladat");
     ELEM.html("<button>OK</button>");
-    ELEM = $("feladat button")[0];
-    const buttonELEM = $(".feladat button")[0];
+    ELEM = $("feladat button");
+    const buttonELEM = $(".feladat button");
     console.log(buttonELEM);
-    buttonELEM.addEventListener("click", kattintas2);
+    $(".feladat button").on("click", kattintas2);
   }
   function kattintas2() {
-    const buttonELEM = $(".feladat")[0];
-    document.$("feladat")[0].html() += buttonELEM.html("<div><img src='unnamed.gif' alt='tuta'></div>");
+    const buttonELEM = $(".feladat");
+    document.$("feladat").eq(0).html() += buttonELEM.html("<div><img src='unnamed.gif' alt='tuta'></div>");
 }
 
 function esemenykezeles3() {
